@@ -1,10 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Vivian's Page</title>
+        <title>CSE 110 Meeting Minutes - October 1, 2021</title>
         <meta name="description" content="Webpage for Lab 2 CSE 110 FA 21">
         <link rel="icon" href="images/favicon-16x16.png">
     </head>
     <body>
+        <header>
+            <nav>
+                <a href="#start">Beginning of Meeting</a>
+                <br>
+                <a href="#summary">Summary of Meeting</a>
+            </nav>
+            <h1>CSE 110 Meeting Minutes</h1>
+            <h3>Date: October 1, 2021</h3>
+            <h3>Topic: Brainstorming ideas</h3>
+        </header>
+        <main>
+            <section>
+                <h2>Attendance List</h2>
+                <ul>
+                    <li>Vivian A. Wu</li>
+                    <li>Vivian B. Wu</li>
+                    <li>Vivian C. Wu</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Agenda</h2>
+                <ol>
+                    <li>Icebreaker</li>
+                    <li>Unfinished Business</li>
+                    <li>New Business</li>
+                    <li>Miscellaneous Comments</li>
+                    <li>Diagrams</li>
+                </ol>
+            </section>
+            <hr>
+            <section id=start>
+                <div class=topic>
+                    <h2>Icebreaker</h2>
+                    <i><p>Major, College, What did you do over summer?</p></i>
+                    <ul>
+                        <li><b>Vivian A. Wu: </b> Computer Science, Warren College, Running and created a website that can be found <a href="https://vrwu.github.io">here</a></a></li>
+                        <li><b>Vivian B. Wu: </b> Computer Science, Warren College, Bought a pair of <span>blue</span> jeans</li>
+                        <li><b>Vivian C. Wu: </b> Computer Science, Warren College, Running</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div class=topic>
+                    <h2>Unfinished Business</h2>
+                    <ul>
+                        <li>Addressing unfinished business 1</li>
+                        <li>Addressing unfinished business 2</li>
+                        <li>Addressing unfinished business 3</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div class=topic>
+                    <h2>New Business</h2>
+                    <ul>
+                        <li>New business 1</li>
+                        <li>New business 2</li>
+                        <li>New business 3 and it needs to be finished <em>as soon as possible</em></li>
+                        <li>New business 4 and this is <strong>super important</strong></li>
+                    </ul>
+                    <p>Remember to post your updates by the next meeting!!</p>
+                </div>
+            </section>
+            <section>
+                <div class=topic>
+                    <h2>Miscellaneous topics</h2>
+                    Remember to do this by the next meeting!!
+                    <br><br>
+                    Also remember to do this!
+                </div>
+            </section>
+            <section id=diagrams>
+                <h2>Diagrams</h2>
+                <img height="500" src="/images/Drawing.png" alt="diagram">
+                <h2>Video of Meeting</h2>
+                <video src="/images/Lab2-video.mov" controls></video>
+                <h2>Audio of Meeting</h2>
+                <audio src="/images/Lab2-audio.mp3" controls></audio>
+            </section>
+            <section id=summary>
+                <h2>Summary of the Meeting</h2>
+                <details>
+                    <summary>Click for the summary</summary>
+                    <p>This is the summary of the meeting</p>
+                </details>
+            </section>
+            <br>
+            <section id=form>
+                <h2>Please fill this out before the next meeting:</h2>
+                <form>
+                    <fieldset>
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <label for="date">Today's Date:</label>
+                        <input type="date" id="date" name="date"><br><br>
+                        <label for="check">Attending Next Meeting?</label>
+                        <input type="checkbox"><br>
+                        <p>Select an ice cream flavor:</p>
+                        <div>
+                            <input type="radio" id="mintchoco" name="flavor" value="mintchoco">
+                            <label for="mintchoco">Mint Chocolate Chip</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="vanilla" name="flavor" value="vanilla">
+                            <label for="vanilla">Vanilla</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="coffee" name="flavor" value="coffee">
+                            <label for="coffee">Coffee</label>
+                        </div>
+                        <br>
+                        <label for="pets">Choose your favorite pet from the list:</label>
+                        <input list="pets" name="pet" id="pet">
+                        <datalist id="pets">
+                            <option value="Dog">
+                            <option value="Cat">
+                            <option value="Hamster">
+                            <option value="Snake">
+                            <option value="Fish">
+                        </datalist>
+                        <br><br>
+                        <label for="colors">Choose a color:</label>
+                        <select name="colors" id="color">
+                            <option value="volvo">Blue</option>
+                            <option value="saab">Green</option>
+                            <option value="opel">Purple</option>
+                            <option value="audi">Red</option>
+                        </select>
+                        <br><br>
+                        <label for="comments">Additional Comments:</label><br>
+                        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                        <br><br>
+                        <button type="button">Click to validate before submitting</button>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+            </section>
+            <br>
+        </main>
+        <footer>
+            Thanks for reading the meeting minutes!
+        </footer>
     </body>
 </html>
