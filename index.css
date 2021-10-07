@@ -1,0 +1,51 @@
+/* this is a comment for the lab */
+h1 {
+    color: #808080;
+    font-size: 7.5vh;
+}
+h2 {
+    color: rgb(105, 140, 189)
+}
+
+h3 {
+    color: hsl(0, 41%, 50%)
+}
+
+p {
+    font-size: 20px;
+    line-height: 2em;
+    text-decoration: underline;
+}
+
+body {
+    background-color: aliceblue;
+    margin: 5%;
+}
+
+img {
+    height: 12cm;
+    margin-top: 5%;
+    margin-left: 0%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+video {
+    height: 7in;
+    margin: 5% 5% 5% 0%;
+
+}
+
+audio {
+    margin: auto;
+}
+
+#form {
+    border-style: dashed;
+    border-color: darkolivegreen;
+    border-width: 2px;
+    border-radius: 2px;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+}
