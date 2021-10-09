@@ -1,4 +1,8 @@
 /* this is a comment for the lab */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
 h1 {
     color: #808080;
     font-size: 7.5vh;
@@ -11,7 +15,11 @@ h3 {
     color: hsl(0, 41%, 50%)
 }
 
-p {
+h2, h3 {
+    padding-left: 1%
+}
+
+p { 
     font-size: 20px;
     line-height: 2em;
     text-decoration: underline;
@@ -20,10 +28,14 @@ p {
 body {
     background-color: aliceblue;
     margin: 5%;
+    position: static;
 }
 
-img {
+.diag {
     height: 12cm;
+    width: 20cm;
+    max-width: fit-content;
+    min-width: none;
     margin-top: 5%;
     margin-left: 0%;
     margin-right: 5%;
@@ -48,4 +60,85 @@ audio {
     padding: 1%;
     margin: 1%;
     text-align: center;
+}
+
+p.display1 {
+    display: none
+}
+
+p.display2 {
+    display: inline
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #f3f3f2;
+    border: 2px solid #acaf80;
+}
+
+button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.02);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.category-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: row;
+}
+
+.card-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+}
+
+a[href="https://vrwu.github.io"] {
+    color: green;
+}
+
+ul li {
+    color: darkgrey
+}
+
+div > h2 {
+    background-color: lightcyan;
+}
+
+p ~ span {
+    color: red
+}
+
+p + span {
+    font-weight: bold;
+}
+
+#id1.topic {
+    font-weight: bold;
+}  
+
+@media only screen and (max-width:600px) {
+    h1 {
+        color: #6b4a4a;
+        font-size: 7.5vh;
+    }
 }
